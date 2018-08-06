@@ -1,56 +1,68 @@
-# unexpected-token. (syntax error)
+# unexpected-token.  (syntax error)
 
-When JavaScript engine cannot parse the file beacuse I made an error in my code. It cannot even make it past the creation phase. 
+When JavaScript engine can't parse the file because I made an error in my code.  It cannot even make it past the creation phase.  
 
-More specifically, I started something I didn't finish. Opened parenthesis I never closed, used and operator with no operand
+More specifically, I started something I didn't finish.  Opened parenthesis I never closed, used an operator with no operand, ...
 
-I first came across this error studying type coercion when I tried to void the typeof operator. I expect this error will be a real pain because the message is not very helpful. 
+I first came across this error studying type coercion when I tried to typof the void operator.  
 
-It tells me there is something missing, but always 
-
+I expect this error will be a real pain becuase the message isn't very helpful.  It tells me there's something missing, but always tells me it's at the end of the file.
 I'll have to go back through the WHOLE FILE to find where I made my mistake.
 
 ___
 
-#code where I first found the error
+## Code where I first found the error
 
 ```js
-
 typeof void
 
-//comments
+// comments
 ```
 
 ```js
-
 typeof void;
 
-//comments
+// comments
 ```
 
-These look so similar, but are so different. with the semicolon JS catches the error before moving on to the rest of the file. 
-this way it can tell me the error is on line, instead of having to stumble to the end and tell me something unhelpful. 
+These look so similar, but are soooo different.  With the semicolon JS catches the error before moving on to the rest of the file.
+This way it can tell me the error is on line 1, instead of having to stumble to the end and tell me something unhelpful.
 
 ___
 
-# The Fixe
+## The Fix
 
-well, void is an operator. it requeires a value to its left, so i gave it one. 
+Well, void is an operator.  it requires a value to it's right, so i gave it one.
 
 ```js
-type of void null;
+typeof void null;
 ```
 
-_null_ for fun, but it could be anything. it does not matter. _void_ turns anything to _undefined_.
+_null_ for fun, but it could be anything.  doesn't matter. _void_ turns anything to _undefined_.
 
 ___
 
 ## Messages from different runtimes
 
-...todo
+... todo
 
 ___
 
 ## More instances
 
-ongoing. (almost) everytime you come cross itm copy-paste the code onto this repo. 
+ongoing.  (almost) every time you come across it, copy-paste the code into this repo. if the code is long you can put it in a separate file.
+
+[replit](https://repl.it/@colevandersWands/unexpected-token)
+
+___
+
+## helpful links
+
+[the first result](https://airbrake.io/blog/javascript-error-handling/unexpected-token)
+
+___
+
+## review
+
+I learned semicolons can help with debugging.
+
