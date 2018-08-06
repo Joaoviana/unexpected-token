@@ -44,7 +44,37 @@ ___
 
 ## Messages from different runtimes
 
-... todo
+ * Google Chrome (V8 Engine)
+unknown: Unexpected token (3:0)
+  1 | // example 1
+  2 | typeof void
+> 3 | 
+    | ^
+ 
+ * Safari (WebKit Engine)
+ 
+ unknown: Unexpected token (3:0)
+  1 | // example 1
+  2 | typeof void
+> 3 | 
+    | ^
+    
+  
+ * Opera (Carakan Engine)
+ 
+ unknown: Unexpected token (3:0)
+  1 | // example 1
+  2 | typeof void
+> 3 | 
+    | ^
+ 
+ * Mozilla Firefox (SpiderMonkey Engine)
+ 
+ unknown: Unexpected token (3:0)
+  1 | // example 1
+  2 | typeof void
+> 3 | 
+    | ^
 
 ___
 
