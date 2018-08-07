@@ -82,6 +82,12 @@ unknown: Unexpected token (3:0)
 ___
 
 ## More instances
+ 
+ ```js
+ let var x;
+ 
+ ```
+
 
 ongoing.  (almost) every time you come across it, copy-paste the code into this repo. if the code is long you can put it in a separate file.
 
