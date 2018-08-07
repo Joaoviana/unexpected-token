@@ -88,6 +88,12 @@ ___
  
  ```
 
+ ```js
+const x;
+ 
+ ```
+Cannot declare a const without initialising it.
+
 
 ongoing.  (almost) every time you come across it, copy-paste the code into this repo. if the code is long you can put it in a separate file.
 
