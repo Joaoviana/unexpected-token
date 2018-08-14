@@ -84,15 +84,28 @@ ___
 ## More instances
  
  ```js
- let var x;
+  let var x;
  
  ```
 
  ```js
-const x;
+ const x;
  
  ```
 Cannot declare a const without initialising it.
+
+```js
+ {} = [0];
+```
+
+Cannot assign an array to empty curly braces. I can only assign values to variables, objects... and {} are just syntax elements. 
+
+A way of correcting this:
+
+```js
+ var obj = {} = [0];
+```
+This method would override the issue and assign [0] to var obj. 
 
 
 ongoing.  (almost) every time you come across it, copy-paste the code into this repo. if the code is long you can put it in a separate file.
