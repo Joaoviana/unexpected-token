@@ -94,6 +94,8 @@ ___
  ```
 Cannot declare a const without initialising it.
 
+___
+
 ```js
  {} = [0];
 ```
