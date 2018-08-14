@@ -100,7 +100,8 @@ ___
  {} = [0];
 ```
 
-Cannot assign an array to empty curly braces. I can only assign values to variables, objects... and {} are just syntax elements. 
+Cannot assign an array to empty curly braces. I can only assign values to variables, objects... and {} is a value.
+Conclusion: You cannot assign a value to a value
 
 A way of correcting this:
 
